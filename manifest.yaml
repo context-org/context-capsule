@@ -1,0 +1,20 @@
+
+---
+
+## File: `manifest.yaml`
+
+```yaml
+capsule:
+  identity:
+    id: "domain/subdomain"                     # e.g., "accounting/fixed-assets"
+    name: "Your Capsule Name"                  # human‑readable
+    version: "0.1.0"
+    author: "Your Name <email@example.com>"
+    license: "MIT"                             # or Apache-2.0, etc.
+  domain: "your-domain"                        # e.g., "accounting"
+  subdomain: "your-subdomain"                  # e.g., "fixed-assets"
+  bounded_context: "optional-context"          # optional
+  description: |
+    A brief description of what this capsule provides.
+  dependencies: []                             # list of other capsule IDs
+  target_runtime: ["python"]                   # supported runtimes
